@@ -35,4 +35,4 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ env.RELEASE_VERSION }}b
-          commit-sha: ${{ GITHUB_SHA }}
+          commit-sha: GITHUB_SHA
