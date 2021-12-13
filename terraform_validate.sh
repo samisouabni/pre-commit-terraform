@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 set -eo pipefail
 
 # `terraform validate` requires this env variable to be set
