@@ -9,7 +9,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  sync_with_upstream:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -23,5 +23,7 @@ jobs:
         # uses: tgymnich/fork-sync@0cc6ac48fd51415e7c34e5b8823021bc952a5f5f
         uses: tgymnich/fork-sync@v1.2.1
         with:
+          # Owner of the forked repository
+          owner: antonbabenko # optional
           # Token for the github API
           github_token: ${{ secrets.GITHUB_TOKEN }}
